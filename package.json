@@ -17,41 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/jccady/relmgmt.git"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
+  "dependencies": {
     "@release-it/conventional-changelog": "^10.0.2",
     "husky": "^9.1.7",
     "release-it": "^19.0.6"
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release v${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": false
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "infile": "CHANGELOG.md",
-        "preset": {
-          "name": "conventionalcommits",
-          "types": [
-            {
-              "type": "feat",
-              "section": "Features"
-            },
-            {
-              "type": "fix",
-              "section": "Bug Fixes"
-            },
-            {}
-          ]
-        }
-      }
-    }
   }
 }
