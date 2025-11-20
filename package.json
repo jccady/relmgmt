@@ -8,7 +8,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prepare": "husky"
+    "release": "release-it"
   },
   "bugs": {
     "url": "https://github.com/jccady/relmgmt/issues"
